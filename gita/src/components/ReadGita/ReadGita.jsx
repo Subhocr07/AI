@@ -5,7 +5,7 @@ const ReadGIta = () => {
     const [chapters, setChapters] = useState([]);
 
     useEffect(() => {
-        fetch("http://test.omshantiom.ai:4000/api/v1/allchapters/")
+        fetch("https://ai-aiq6.onrender.com/api/v1/allchapters/")
             .then((response) => response.json())
             .then((data) => setChapters(data));
     }, []);

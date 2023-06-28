@@ -7,7 +7,7 @@ const Verses = () => {
     const [verses, setVerses] = useState([]);
 
     useEffect(() => {
-        fetch(`http://test.omshantiom.ai:4000/api/v1/chapter/${chapterId}`)
+        fetch(`https://ai-aiq6.onrender.com/api/v1/chapter/${chapterId}`)
             .then((response) => response.json())
             .then((data) => setVerses(data.length === 0 ? null : data));
     }, [chapterId]);

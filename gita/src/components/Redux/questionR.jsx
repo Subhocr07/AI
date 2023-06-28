@@ -54,7 +54,7 @@ const Question = () => {
             try {
                 setState({ ...state, loading: true });
                 const response = await axios.post(
-                    "http://test.omshantiom.ai:4000",
+                    "https://ai-aiq6.onrender.com",
                     { question },
                     {
                         method: "POST",

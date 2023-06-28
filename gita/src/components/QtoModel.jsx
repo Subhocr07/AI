@@ -53,7 +53,7 @@ const Question = () => {
             try {
                 setState({ ...state, loading: true });
                 const response = await axios.post(
-                    "http://localhost:8080/get-shloka-data",
+                    "https://ai-aiq6.onrender.com/get-shloka-data",
                     { question },
                     {
                         method: "POST",

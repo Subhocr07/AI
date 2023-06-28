@@ -6,7 +6,7 @@ const VerseDetails = () => {
     const [meaning, setMeaning] = useState([])
 
     useEffect(() => {
-        fetch(`http://test.omshantiom.ai:4000/api/v1/chapter/${chapterId}/verses/${verseId}`)
+        fetch(`https://ai-aiq6.onrender.com/api/v1/chapter/${chapterId}/verses/${verseId}`)
             .then((response) => response.json())
             .then((data) => setMeaning(data));
     }, [chapterId, verseId])
